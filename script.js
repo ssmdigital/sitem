@@ -53,23 +53,23 @@ track.innerHTML = [...logos, ...logos].map((name) => `<img class="mx-11" src="/a
 const featuresData = [
     {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500 size-8 mt-4"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>`,
-        title: "Lightning-fast setup",
-        description: "Launch production-ready pages in minutes with prebuilt components.",
+        title: "Işık Hızında Müdahale",
+        description: "Hesap sorunlarınızda ve dijital taleplerinizde en hızlı aksiyonu alıyoruz.",
     },
     {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500 size-8 mt-4"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg>`,
-        title: "Pixel perfect",
-        description: "Modern Figma-driven UI that translates to exact code.",
+        title: "Kusursuz Tasarım",
+        description: "Markanız için piksel hassasiyetinde, modern ve etkileyici görseller hazırlıyoruz.",
     },
     {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500 size-8 mt-4"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"/><rect x="3" y="14" width="7" height="7" rx="1"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>`,
-        title: "Highly customizable",
-        description: "Tailwind utility-first classes make customization trivial.",
+        title: "Size Özel Çözümler",
+        description: "İhtiyaçlarınıza göre tamamen özelleştirilebilir dijital stratejiler geliştiriyoruz.",
     },
     {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500 size-8 mt-4"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>`,
-        title: "Accessible & responsive",
-        description: "Built with accessibility and mobile-first design in mind.",
+        title: "7/24 Aktif Destek",
+        description: "Sorularınız ve teknik destek talepleriniz için her an yanınızdayız.",
     },
 ];
 
@@ -83,42 +83,45 @@ features.innerHTML = featuresData.map((feature) => `<div class="p-6 rounded-xl s
 
 const pricingData = [
     {
-        title: "Basic Plan",
+        title: "Dijital Check-Up",
         price: 29,
         features: [
-            "5 Projects",
-            "10 GB Storage",
-            "Basic Support",
-            "Community Access",
-            "Basic code review",
+            "Spam & Engel Kontrolü",
+            "Profil Optimizasyonu",
+            "Hesap Güvenlik Analizi",
+            "Görsel Tasarım Tavsiyeleri",
+            "Haftalık 1 Adet Ücretsiz Danışmanlık",
         ],
-        buttonText: "Get Started",
+        buttonText: "Hemen Başla",
+    link: "https://wa.me/905376387310"
     },
     {
-        title: "Pro Plan",
+        title: "Premium Recovery",
         price: 79,
         mostPopular: true,
         features: [
-            "50 Projects",
-            "100 GB Storage",
-            "Priority Support",
-            "Team Collaboration",
-            "Advanced Analytics",
-            "Premium Code Review",
+            "Saldırı Önleyici Altyapı",
+            "Üst Düzey Güvenlik Koruması",
+            "Resmi Form ve İtiraz Yönetimi",
+            "7/24 Birebir Partner Desteği",
+            "Kapatılan/Çalınan Hesap Müdahalesi",
+            "Siber Tehditlere Karşı Tam Koruma Hizmeti",
         ],
-        buttonText: "Upgrade Now",
+       buttonText: "Teklif Al",
+    link: "https://wa.me/905376387310"
     },
     {
-        title: "Enterprise Plan",
+        title: "Sosyal Medya Pro",
         price: 149,
         features: [
-            "Unlimited Projects",
-            "1 TB Storage",
-            "24/7 Dedicated Support",
-            "Custom Integrations",
-            "SLA Guarantee",
+            "Marka Kimliği Oluşturma",
+            "Detaylı Performans Raporu",
+            "Profesyonel Grafik Tasarım",
+            "Reklam ve Strateji Yönetimi",
+            "Tam Zamanlı İçerik Planlama",
         ],
-        buttonText: "Contact Sales",
+        buttonText: "Hemen Teklif Al",
+    link: "https://wa.me/905376387310"
     },
 ];
 
@@ -133,7 +136,7 @@ pricingContainer.innerHTML = pricingData.map(plan => `
         ${plan.mostPopular
         ? `<div class="flex items-center text-xs gap-1 py-1.5 px-2 text-purple-600 absolute top-4 right-4 rounded bg-white font-medium">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles-icon lucide-sparkles"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
-              <p>Most Popular</p>
+              <p>En Çok Satın Alınan</p>
             </div>`
         : ""}
 
@@ -165,24 +168,24 @@ pricingContainer.innerHTML = pricingData.map(plan => `
 // FAQ Data
 const faqsData = [
     {
-        question: "What is this SaaS app used for?",
-        answer: "This app helps businesses manage their workflows more efficiently by automating tasks, tracking performance, and integrating with third-party tools."
+        question: "Hangi platformlar için uzmanlık sunuyorsunuz?",
+        answer: "Temel uzmanlık alanımız Instagram ve Facebook'tur. Ayrıca Telegram kanalları ve hesapları için de profesyonel güvenlik ve kurtarma çözümleri sağlıyoruz."
     },
     {
-        question: "Is there a free trial available?",
-        answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card is required to start the trial."
+        question: "Hesap kurtarma sürecinde şifre paylaşmam güvenli mi?",
+        answer: "Bazı teknik işlemler için bu gerekebilir. Ancak 'Hesap Partneri' kimliğimizle, tüm süreci karşılıklı güven ve şeffaflık esasına dayalı yürütüyoruz. Sizin güvenliğiniz bizim marka değerimizdir."
     },
     {
-        question: "Can I change my subscription plan later?",
-        answer: "Absolutely! You can upgrade or downgrade your plan at any time from your account settings."
+        question: "Kapatılan veya çalınan hesabım kesin açılır mı?",
+        answer: "Süreçlerimizi doğrudan Meta Temsilcileri ve Çözüm Ortaklarımız ile koordineli yürütüyoruz. Partnerlik ağımız ve resmi başvuru kanallarımız sayesinde vakaların büyük çoğunluğunu başarıyla sonuçlandırıyoruz."
     },
     {
-        question: "How is my data secured?",
-        answer: "We use industry-standard encryption, regular security audits, and secure data centers to ensure your data is safe and protected."
+        question: "Sosyal medya yönetiminde neler yapıyorsunuz?",
+        answer: "Instagram ve Facebook platformlarında markanızı büyütecek içerik planlama, profesyonel tasarım ve temsilci ağımızdan aldığımız verilerle etkileşim odaklı stratejiler geliştiriyoruz."
     },
     {
-        question: "Do you offer customer support?",
-        answer: "Yes, our support team is available 24/7 via live chat and email. We also have a help center with detailed documentation and tutorials."
+        question: "Size nasıl ulaşabilirim?",
+        answer: "+90 537 638 7310 bu numara üzerinden doğrudan bana ulaşabilir, Instagram veya Telegram sorunlarınız için anında destek alabilirsiniz."
     }
 ];
 
