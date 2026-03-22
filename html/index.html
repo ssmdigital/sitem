@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furkansusam.digital</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="flex items-center justify-between fixed z-50 top-0 w-full px-6 md:px-16 lg:px-24 xl:px-32 py-4 backdrop-blur">
+        <a href="furkansusam.digital">
+            <img id="logo" src="./assets/logo-dark.svg" alt="Logo" class="h-9 md:h-9.5 w-auto shrink-0">
+        </a>
+
+        <div class="hidden items-center md:gap-8 lg:gap-12 md:flex lg:pl-20">
+            <a href="/" class="hover:text-slate-600 dark:hover:text-slate-300">Ana Sayfa</a>
+            <a href="/features" class="hover:text-slate-600 dark:hover:text-slate-300">Hizmetler</a>
+            <a href="/pricing" class="hover:text-slate-600 dark:hover:text-slate-300">Fiyatlandırma</a>
+            <a href="/docs" class="hover:text-slate-600 dark:hover:text-slate-300">SSS</a>
+        </div>
+
+        <div id="mobileMenu" class="fixed inset-0 flex flex-col items-center justify-center gap-6 text-lg font-medium bg-white/60 dark:bg-black/40 backdrop-blur-md md:hidden transition duration-300 -translate-x-full">
+            <a href="/">Ana Sayfa</a>
+            <a href="/features">Hizmetler</a>
+            <a href="/pricing">Fiyatlandırma</a>
+            <a href="/docs">SSS</a>
+            <button>Giriş Yap</button>
+            <button id="closeMenu"
+                class="aspect-square size-10 p-1 items-center justify-center bg-purple-600 hover:bg-purple-700 transition text-white rounded-md flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-x-icon lucide-x">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-4 md:gap-6">
+            <button id="themeToggle" class="flex items-center justify-center size-9 p-2 rounded-full bg-slate-950/5 hover:bg-slate-950/10 dark:bg-white/10 dark:hover:bg-white/20 transition-colors duration-200 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sun-icon lucide-sun">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                </svg>
+            </button>
+
+            <button class="hidden md:block hover:bg-slate-100 dark:hover:bg-purple-950 transition px-4 py-2 border border-purple-600 rounded-md">
+                Giriş Yap
+            </button>
+            <button class="hidden md:block px-4 py-2 bg-purple-600 hover:bg-purple-700 transition text-white rounded-md">
+                Hemen Başla
+            </button>
+            <button id="openMenu" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 12h16" />
+                    <path d="M4 18h16" />
+                    <path d="M4 6h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col items-center justify-center text-center px-4 bg-[url('./assets/light-hero-gradient.svg')] dark:bg-[url('./assets/dark-hero-gradient.svg')] bg-no-repeat bg-cover">
+        <div class="flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-46 rounded-full border border-slate-300 dark:border-slate-600 bg-white/70 dark:bg-slate-600/20">
+            <div class="flex items-center -space-x-3">
+                <img class="size-7 rounded-full" height={50} width={50}
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=50" alt="userImage1" />
+                <img class="size-7 rounded-full" height={50} width={50}
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=50" alt="userImage2" />
+                <img class="size-7 rounded-full" height={50} width={50}
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=50&h=50&auto=format&fit=crop"
+                    alt="userImage3" />
+            </div>
+            <p class="text-xs">500'den fazla içerik üreticisinin tercihi. </p>
+        </div>
+        <h1 class="mt-2 text-5xl/15 md:text-[64px]/19 font-semibold max-w-2xl">
+            Türkiye'nin Dijital
+            <span class="bg-gradient-to-r from-[#923FEF] dark:from-[#C99DFF] to-[#C35DE8] dark:to-[#E1C9FF] bg-clip-text text-transparent">Hizmet Merkezi</span>
+        </h1>
+        <p class="text-base dark:text-slate-300 max-w-lg mt-2">
+            Sosyal medya çözümlerinden yapay zeka lisanslarına, stratejik marka tasarımından dijital ürün tedariğine kadar tüm ihtiyaçlarınız profesyonel güvenceyle tek noktada.
+        </p>
+        <div class="flex items-center gap-4 mt-8">
+            <button class="bg-purple-600 hover:bg-purple-700 transition text-white rounded-md px-6 h-11">
+                Hemen Başla 
+            </button>
+            <button class="flex items-center gap-2 border border-purple-900 transition text-slate-600 dark:text-white rounded-md px-6 h-11">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-video-icon lucide-video">
+                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                    <rect x="2" y="6" width="14" height="12" rx="2" />
+                </svg>
+                <span>Başarı Hikayelerin İzle</span>
+            </button>
+        </div>
+        <h3 class="text-base text-center text-slate-400 mt-28 pb-14 font-medium">
+            Dijitaldeki gücünüz.
+        </h3>
+        <div class="overflow-hidden w-full relative max-w-5xl mx-auto select-none">
+            <div class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white dark:from-black to-transparent"></div>
+
+            <div class="marquee-inner will-change-transform max-w-5xl mx-auto">
+                <div id="logo-track" class="flex"></div>
+            </div>
+
+            <div class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-white dark:from-black to-transparent"></div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="text-center">
+        <p class="text-center font-medium text-indigo-600 dark:text-indigo-400 mt-28 px-10 py-2 rounded-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 w-max mx-auto">Hizmetler</p>
+        <h2 class="text-3xl font-semibold text-center mx-auto mt-4">Dijital Varlığınızı Uçtan Uca Yönetiyoruz</h2>
+        <p class="mt-2 text-slate-500 dark:text-slate-300 max-w-xl mx-auto">
+            Sosyal medya yönetiminden marka tasarımına, ihtiyacınız olan tüm dijital çözümleri tek bir çatı altında topladık.
+        </p>
+    </div>
+    <div id="features" class="flex flex-wrap items-center justify-center gap-6 md:gap-4 mt-10 px-6 md:px-16 lg:px-24 xl:px-32"></div>
+
+    <!-- Pricing Section -->
+    <div class="relative">
+        <img id="colorSplash" class="absolute -mt-20 md:-mt-100 md:left-20 pointer-events-none" src="./assets/color-splash-light.svg" alt="color-splash" width="1000" height="1000">
+
+        <p class="text-center font-medium text-indigo-600 dark:text-indigo-400 mt-28 px-10 py-2 rounded-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 w-max mx-auto">
+            Fiyatlandırma</p>
+        <h3 class="text-3xl font-semibold text-center mx-auto mt-4">Fiyatlandırma Planlarımız</h3>
+        <p class="text-slate-600 dark:text-slate-300 text-center mt-2 max-w-lg mx-auto">İster yeni başlıyor olun ister işinizi büyütüyor olun, ihtiyaçlarınıza uygun esnek fiyatlandırma seçenekleri sunuyoruz.</p>
+
+        <div id="pricing" class="flex flex-wrap items-center justify-center gap-6 mt-16"></div>
+    </div>
+
+    <!-- Faq Section -->
+    <div class="relative max-w-xl mx-auto flex flex-col items-center justify-center px-4 md:px-0 mt-20">
+        <img id="faqSplash" class="absolute -mb-120 -left-40 -z-10" src="./assets/color-splash-light.svg" alt="color-splash" width="1000" height="1000">
+
+        <div class="text-center">
+            <p class="text-center font-medium text-indigo-600 dark:text-indigo-400 mt-28 px-10 py-2 rounded-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 w-max mx-auto">SSS</p>
+            <h2 class="text-3xl font-semibold text-center mx-auto mt-4">Merak Ettikleriniz</h2>
+            <p class="mt-2 text-slate-500 dark:text-slate-300 max-w-xl mx-auto">
+                Aklınıza takılan soruları yanıtladık. Eğer aradığınız cevabı bulamazsanız, bizimle iletişime geçmekten çekinmeyin..
+            </p>
+        </div>
+
+        <div id="faq-container" class="mt-8 w-full"></div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="flex flex-col items-center text-center justify-center mt-20">
+        <h3 class="text-3xl font-semibold mt-16 mb-4">Başlamaya hazır mısın?</h3>
+        <p class="text-slate-600 dark:text-slate-200 max-w-xl mx-auto">
+            Binlerce memnun müşteriye katılın ve işletmenizi bugün dönüştürün.
+        </p>
+        <div class="flex items-center gap-4 mt-8">
+            <a href="https://wa.me/905376387310" target="_blank" class="flex items-center justify-center bg-purple-600 hover:bg-purple-700 transition text-white rounded-md px-6 h-11">
+    Hemen iletişime geçin.
+</a>
+            </button>
+            <button class="border border-purple-900 transition text-slate-600 dark:text-white rounded-md px-6 h-11">
+                Satış ekibiyle iletişime geçin.
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="relative px-6 md:px-16 lg:px-24 xl:px-32 mt-40 w-full dark:text-slate-50">
+        <img id="landing-text" class="absolute max-w-4xl w-full h-auto -mt-30 max-md:px-4 right-0 md:right-16 lg:right-24 xl:right-32 top-0 pointer-events-none"
+            src="./assets/landing-text-light.svg" alt="landing" width={930} height={340} priority fetchPriority="high" />
+        <div class="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-200 dark:border-slate-700 pb-6">
+            <div class="md:max-w-114">
+                <img id="logo-footer" class="h-9 md:h-9.5 w-auto shrink-0" src="./assets/logo-dark.svg" alt="Logo"
+                    width={140} height={40} priority fetchPriority="high" />
+                <p class="mt-6">
+                    Hız, esneklik ve büyüme için tasarlanmış hepsi bir arada platform platformumuzla SaaS ürününüzü rekor 
+                    sürede piyasaya sürün. İster tek başına çalışan bir girişimci olun ister hızla büyüyen bir ekip, 
+                    ihtiyacınız olan her şeyi biz sağlıyoruz.
+                </p>
+            </div>
+            <div class="flex-1 flex items-start md:justify-end gap-20">
+                <div>
+                    <h2 class="font-semibold mb-5">Furkan Susam Digital</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="/" class="hover:text-purple-600 transition">Ana Sayfa</a>
+                        </li>
+                        <li>
+                            <a href="/features" class="hover:text-purple-600 transition">Hizmetler</a>
+                        </li>
+                        <li>
+                            <a href="/pricing" class="hover:text-purple-600 transition">Fiyatlandırma</a>
+                        </li>
+                        <li>
+                            <a href="/docs" class="hover:text-purple-600 transition">SSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold mb-5">İletişim</h2>
+                    <div class="space-y-2">
+                        <p>+90 (537) 637 73 10</p>
+                        <p>hi@furkansusam.digital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="pt-4 text-center pb-5">
+            Telif hakkı 2020-2026 © <a href="https://furkansusam.digital">Furkan Susam Digital</a>. Tüm hakları saklıdır.
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
