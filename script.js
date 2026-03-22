@@ -84,7 +84,7 @@ features.innerHTML = featuresData.map((feature) => `<div class="p-6 rounded-xl s
 const pricingData = [
     {
         title: "Dijital Check-Up",
-        price: 29,
+        price: 250,
         features: [
             "Spam & Engel Kontrolü",
             "Profil Optimizasyonu",
@@ -97,7 +97,7 @@ const pricingData = [
     },
     {
         title: "Premium Recovery",
-        price: 79,
+        price: Teklif Al,
         mostPopular: true,
         features: [
             "Saldırı Önleyici Altyapı",
@@ -112,7 +112,7 @@ const pricingData = [
     },
     {
         title: "Sosyal Medya Pro",
-        price: 149,
+        price: 500,
         features: [
             "Marka Kimliği Oluşturma",
             "Detaylı Performans Raporu",
